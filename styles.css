@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** colores **/
+.color-sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.color-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.color-luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.texto-coche{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  width: 14em;
+  
+}
+
+/** SECTION PRIMARY**/
+
+.contenido-flex {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+}
+
+
+.seccion-article {
+
+  padding:  4em 3em 5em 3em ;
+  
+}
+.seccion-article:last-child {
+  
+}
+
+.seccion-article:nth-last-child(3) {
+  border-radius: 0.4em 0 0 0.4em;
+}
+.seccion-article:nth-last-child(1) {
+  border-radius: 0 0.4em 0.4em 0;
+}
+
+@media (max-width: 850px) {
+  .contenido-flex {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .seccion-article:nth-last-child(3) {
+    border-radius:  .4em .4em 0 0  ;
+  }
+  .seccion-article:nth-last-child(1) {
+    border-radius: 0 0 .4em .4em ;
+  }
+}
+.h2-coche {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.texto-coche {
+  margin-bottom: 5em;
+}
+.texto-coche-luxury {
+  margin-bottom: 6.8em;
+}
+.boton {
+    justify-content: center;
+    background-color: #fff;
+    padding: 1em 2em;
+    text-transform: capitalize;
+    border-radius: 3em;
+    font-weight: 700;
+
+}
+.boton:hover {
+    background-color: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+}
+
+.boton-sedans {
+    color:  hsl(31, 77%, 52%);
+    
+}
+.boton-suvs {
+    color: hsl(184, 100%, 22%);
+}
+.boton-color-luxury {
+    color: hsl(179, 100%, 13%);
+
+}
+
+
